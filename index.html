@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Basketball Scoreboard</title>
+</head>
+<body>
+    <div class="row">
+        <div class="scores">
+            <div class="column">
+                <h1>Home</h1>
+                <h1>Score: <span id="home-score">0</span></h1>
+                <div class="points">
+                    <button class="score-btn" id="add1-btn" onclick="add1home()">+1</button>
+                    <button class="score-btn" id="add2-btn" onclick="add2home()">+2</button>
+                    <button class="score-btn" id="add3-btn" onclick="add3home()">+3</button>
+                </div>
+            </div>
+            <div class="column">
+                <h1>Guest</h1>
+                <h1>Score: <span id="guest-score">0</span></h1>
+                <div class="points">
+                    <button class="score-btn" id="add1-btn" onclick="add1guest()">+1</button>
+                    <button class="score-btn" id="add2-btn" onclick="add2guest()">+2</button>
+                    <button class="score-btn" id="add3-btn" onclick="add3guest()">+3</button>
+                </div>
+            </div>
+        </div>
+        <div class="winner">
+            <h1>Who is winning: <span id="winner">Draw</span></h1>
+        </div>
+        <button class="rst-btn" onclick="reset()">Reset Scores</button>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
